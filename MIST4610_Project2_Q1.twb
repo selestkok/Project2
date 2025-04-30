@@ -1,0 +1,2049 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Animal_Shelter_Animals' inline='true' name='federated.1smv9y51hsggeg0zt2dnq0uqpk7j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Animal_Shelter_Animals' name='textscan.0w8l1900rhvb311cj42qm01j2q8f'>
+            <connection class='textscan' directory='/Users/m.paoladiaz/Documents/SQLData' filename='Animal_Shelter_Animals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0w8l1900rhvb311cj42qm01j2q8f' name='Animal_Shelter_Animals.csv' table='[Animal_Shelter_Animals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='datetime' name='intakedate' ordinal='1' />
+            <column datatype='string' name='intakereason' ordinal='2' />
+            <column datatype='boolean' name='istransfer' ordinal='3' />
+            <column datatype='string' name='sheltercode' ordinal='4' />
+            <column datatype='real' name='identichipnumber' ordinal='5' />
+            <column datatype='string' name='animalname' ordinal='6' />
+            <column datatype='string' name='breedname' ordinal='7' />
+            <column datatype='string' name='basecolour' ordinal='8' />
+            <column datatype='string' name='speciesname' ordinal='9' />
+            <column datatype='string' name='animalage' ordinal='10' />
+            <column datatype='string' name='sexname' ordinal='11' />
+            <column datatype='string' name='location' ordinal='12' />
+            <column datatype='datetime' name='movementdate' ordinal='13' />
+            <column datatype='string' name='movementtype' ordinal='14' />
+            <column datatype='boolean' name='istrial' ordinal='15' />
+            <column datatype='datetime' name='returndate' ordinal='16' />
+            <column datatype='string' name='returnedreason' ordinal='17' />
+            <column datatype='datetime' name='deceaseddate' ordinal='18' />
+            <column datatype='string' name='deceasedreason' ordinal='19' />
+            <column datatype='boolean' name='diedoffshelter' ordinal='20' />
+            <column datatype='boolean' name='puttosleep' ordinal='21' />
+            <column datatype='boolean' name='isdoa' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intakedate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[intakedate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>intakedate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intakereason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[intakereason]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>intakereason</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>istransfer</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[istransfer]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>istransfer</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sheltercode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sheltercode]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>sheltercode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>identichipnumber</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[identichipnumber]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>identichipnumber</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>animalname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[animalname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>animalname</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>breedname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[breedname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>breedname</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>basecolour</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[basecolour]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>basecolour</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speciesname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[speciesname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>speciesname</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>animalage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[animalage]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>animalage</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sexname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sexname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>sexname</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movementdate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[movementdate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>movementdate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movementtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[movementtype]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>movementtype</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>istrial</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[istrial]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>istrial</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returndate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[returndate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>returndate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnedreason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[returnedreason]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>returnedreason</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deceaseddate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[deceaseddate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>deceaseddate</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deceasedreason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deceasedreason]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>deceasedreason</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diedoffshelter</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[diedoffshelter]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>diedoffshelter</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>puttosleep</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[puttosleep]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>puttosleep</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isdoa</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[isdoa]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>isdoa</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Animal_Shelter_Animals.csv' datatype='table' name='[__tableau_internal_object_id__].[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]' role='measure' type='quantitative' />
+      <column caption='Animalage' datatype='string' name='[animalage]' role='dimension' type='nominal' />
+      <column caption='Animalname' datatype='string' name='[animalname]' role='dimension' type='nominal' />
+      <column caption='Basecolour' datatype='string' name='[basecolour]' role='dimension' type='nominal' />
+      <column caption='Breedname' datatype='string' name='[breedname]' role='dimension' type='nominal' />
+      <column caption='Deceaseddate' datatype='datetime' name='[deceaseddate]' role='dimension' type='ordinal' />
+      <column caption='Deceasedreason' datatype='string' name='[deceasedreason]' role='dimension' type='nominal' />
+      <column caption='Diedoffshelter' datatype='boolean' name='[diedoffshelter]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Identichipnumber' datatype='real' name='[identichipnumber]' role='measure' type='quantitative' />
+      <column caption='Intakedate' datatype='datetime' name='[intakedate]' role='dimension' type='ordinal' />
+      <column caption='Intakereason' datatype='string' name='[intakereason]' role='dimension' type='nominal' />
+      <column caption='Isdoa' datatype='boolean' name='[isdoa]' role='dimension' type='nominal' />
+      <column caption='Istransfer' datatype='boolean' name='[istransfer]' role='dimension' type='nominal' />
+      <column caption='Istrial' datatype='boolean' name='[istrial]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Movementdate' datatype='datetime' name='[movementdate]' role='dimension' type='ordinal' />
+      <column caption='Movementtype' datatype='string' name='[movementtype]' role='dimension' type='nominal' />
+      <column caption='Puttosleep' datatype='boolean' name='[puttosleep]' role='dimension' type='nominal' />
+      <column caption='Returndate' datatype='datetime' name='[returndate]' role='dimension' type='ordinal' />
+      <column caption='Returnedreason' datatype='string' name='[returnedreason]' role='dimension' type='nominal' />
+      <column caption='Sexname' datatype='string' name='[sexname]' role='dimension' type='nominal' />
+      <column caption='Sheltercode' datatype='string' name='[sheltercode]' role='dimension' type='nominal' />
+      <column caption='Speciesname' datatype='string' name='[speciesname]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/1x/yk4yryxx0jq61y03v1804gtw0000gn/T/tableau-temp/#TableauTemp_06f76je141ica21egvmy61ev0cmk.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/30/2025 12:09:52 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13956</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>intakedate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[intakedate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>intakedate</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8932</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>intakereason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[intakereason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>intakereason</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>istransfer</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[istransfer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>istransfer</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sheltercode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sheltercode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sheltercode</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13956</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>identichipnumber</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[identichipnumber]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>identichipnumber</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>animalname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[animalname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>animalname</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7174</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>breedname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[breedname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>breedname</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1238</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>basecolour</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[basecolour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>basecolour</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>speciesname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[speciesname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>speciesname</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>animalage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[animalage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>animalage</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>475</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sexname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sexname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sexname</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movementdate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[movementdate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movementdate</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4550</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movementtype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[movementtype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movementtype</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>istrial</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[istrial]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>istrial</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returndate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[returndate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>returndate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3612</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnedreason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[returnedreason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>returnedreason</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deceaseddate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[deceaseddate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deceaseddate</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2304</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deceasedreason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deceasedreason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deceasedreason</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>diedoffshelter</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[diedoffshelter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>diedoffshelter</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>puttosleep</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[puttosleep]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>puttosleep</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>isdoa</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[isdoa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>isdoa</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Animal_Shelter_Animals.csv' id='Animal_Shelter_Animals.csv_6654E375716941A98D46A54F7BC8DC84'>
+            <properties context=''>
+              <relation connection='textscan.0w8l1900rhvb311cj42qm01j2q8f' name='Animal_Shelter_Animals.csv' table='[Animal_Shelter_Animals#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='datetime' name='intakedate' ordinal='1' />
+                  <column datatype='string' name='intakereason' ordinal='2' />
+                  <column datatype='boolean' name='istransfer' ordinal='3' />
+                  <column datatype='string' name='sheltercode' ordinal='4' />
+                  <column datatype='real' name='identichipnumber' ordinal='5' />
+                  <column datatype='string' name='animalname' ordinal='6' />
+                  <column datatype='string' name='breedname' ordinal='7' />
+                  <column datatype='string' name='basecolour' ordinal='8' />
+                  <column datatype='string' name='speciesname' ordinal='9' />
+                  <column datatype='string' name='animalage' ordinal='10' />
+                  <column datatype='string' name='sexname' ordinal='11' />
+                  <column datatype='string' name='location' ordinal='12' />
+                  <column datatype='datetime' name='movementdate' ordinal='13' />
+                  <column datatype='string' name='movementtype' ordinal='14' />
+                  <column datatype='boolean' name='istrial' ordinal='15' />
+                  <column datatype='datetime' name='returndate' ordinal='16' />
+                  <column datatype='string' name='returnedreason' ordinal='17' />
+                  <column datatype='datetime' name='deceaseddate' ordinal='18' />
+                  <column datatype='string' name='deceasedreason' ordinal='19' />
+                  <column datatype='boolean' name='diedoffshelter' ordinal='20' />
+                  <column datatype='boolean' name='puttosleep' ordinal='21' />
+                  <column datatype='boolean' name='isdoa' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Animal_Shelter_Animals (2)' inline='true' name='federated.18h7gf40warcbf0zxh57r1ye1fw4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Animal_Shelter_Animals' name='textscan.1lp9c280z5ghe31c9wr9r0ug2kgh'>
+            <connection class='textscan' directory='/Users/m.paoladiaz/Documents/SQLData' filename='Animal_Shelter_Animals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1lp9c280z5ghe31c9wr9r0ug2kgh' name='Animal_Shelter_Animals.csv' table='[Animal_Shelter_Animals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='datetime' name='intakedate' ordinal='1' />
+            <column datatype='string' name='intakereason' ordinal='2' />
+            <column datatype='boolean' name='istransfer' ordinal='3' />
+            <column datatype='string' name='sheltercode' ordinal='4' />
+            <column datatype='real' name='identichipnumber' ordinal='5' />
+            <column datatype='string' name='animalname' ordinal='6' />
+            <column datatype='string' name='breedname' ordinal='7' />
+            <column datatype='string' name='basecolour' ordinal='8' />
+            <column datatype='string' name='speciesname' ordinal='9' />
+            <column datatype='string' name='animalage' ordinal='10' />
+            <column datatype='string' name='sexname' ordinal='11' />
+            <column datatype='string' name='location' ordinal='12' />
+            <column datatype='datetime' name='movementdate' ordinal='13' />
+            <column datatype='string' name='movementtype' ordinal='14' />
+            <column datatype='boolean' name='istrial' ordinal='15' />
+            <column datatype='datetime' name='returndate' ordinal='16' />
+            <column datatype='string' name='returnedreason' ordinal='17' />
+            <column datatype='datetime' name='deceaseddate' ordinal='18' />
+            <column datatype='string' name='deceasedreason' ordinal='19' />
+            <column datatype='boolean' name='diedoffshelter' ordinal='20' />
+            <column datatype='boolean' name='puttosleep' ordinal='21' />
+            <column datatype='boolean' name='isdoa' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intakedate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[intakedate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>intakedate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intakereason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[intakereason]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>intakereason</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>istransfer</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[istransfer]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>istransfer</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sheltercode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sheltercode]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>sheltercode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>identichipnumber</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[identichipnumber]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>identichipnumber</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>animalname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[animalname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>animalname</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>breedname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[breedname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>breedname</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>basecolour</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[basecolour]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>basecolour</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speciesname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[speciesname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>speciesname</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>animalage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[animalage]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>animalage</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sexname</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sexname]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>sexname</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movementdate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[movementdate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>movementdate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movementtype</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[movementtype]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>movementtype</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>istrial</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[istrial]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>istrial</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returndate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[returndate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>returndate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnedreason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[returnedreason]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>returnedreason</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deceaseddate</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[deceaseddate]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>deceaseddate</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deceasedreason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deceasedreason]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>deceasedreason</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diedoffshelter</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[diedoffshelter]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>diedoffshelter</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>puttosleep</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[puttosleep]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>puttosleep</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isdoa</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[isdoa]</local-name>
+            <parent-name>[Animal_Shelter_Animals.csv]</parent-name>
+            <remote-alias>isdoa</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Animal_Shelter_Animals.csv' datatype='table' name='[__tableau_internal_object_id__].[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]' role='measure' type='quantitative' />
+      <column caption='Animalage' datatype='string' name='[animalage]' role='dimension' type='nominal' />
+      <column caption='Animalname' datatype='string' name='[animalname]' role='dimension' type='nominal' />
+      <column caption='Basecolour' datatype='string' name='[basecolour]' role='dimension' type='nominal' />
+      <column caption='Breedname' datatype='string' name='[breedname]' role='dimension' type='nominal' />
+      <column caption='Deceaseddate' datatype='datetime' name='[deceaseddate]' role='dimension' type='ordinal' />
+      <column caption='Deceasedreason' datatype='string' name='[deceasedreason]' role='dimension' type='nominal' />
+      <column caption='Diedoffshelter' datatype='boolean' name='[diedoffshelter]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Identichipnumber' datatype='real' name='[identichipnumber]' role='measure' type='quantitative' />
+      <column caption='Intakedate' datatype='datetime' name='[intakedate]' role='dimension' type='ordinal' />
+      <column caption='Intakereason' datatype='string' name='[intakereason]' role='dimension' type='nominal' />
+      <column caption='Isdoa' datatype='boolean' name='[isdoa]' role='dimension' type='nominal' />
+      <column caption='Istransfer' datatype='boolean' name='[istransfer]' role='dimension' type='nominal' />
+      <column caption='Istrial' datatype='boolean' name='[istrial]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Movementdate' datatype='datetime' name='[movementdate]' role='dimension' type='ordinal' />
+      <column caption='Movementtype' datatype='string' name='[movementtype]' role='dimension' type='nominal' />
+      <column caption='Puttosleep' datatype='boolean' name='[puttosleep]' role='dimension' type='nominal' />
+      <column caption='Returndate' datatype='datetime' name='[returndate]' role='dimension' type='ordinal' />
+      <column caption='Returnedreason' datatype='string' name='[returnedreason]' role='dimension' type='nominal' />
+      <column caption='Sexname' datatype='string' name='[sexname]' role='dimension' type='nominal' />
+      <column caption='Sheltercode' datatype='string' name='[sheltercode]' role='dimension' type='nominal' />
+      <column caption='Speciesname' datatype='string' name='[speciesname]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/1x/yk4yryxx0jq61y03v1804gtw0000gn/T/tableau-temp/#TableauTemp_1pt0a4r0egh7fe19pthic0ktjpwh.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/30/2025 12:10:10 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13956</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>intakedate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[intakedate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>intakedate</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8932</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>intakereason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[intakereason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>intakereason</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>istransfer</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[istransfer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>istransfer</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sheltercode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sheltercode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sheltercode</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13956</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>identichipnumber</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[identichipnumber]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>identichipnumber</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>76</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>animalname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[animalname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>animalname</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7174</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>breedname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[breedname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>breedname</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1238</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>basecolour</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[basecolour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>basecolour</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>speciesname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[speciesname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>speciesname</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>animalage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[animalage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>animalage</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>475</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sexname</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sexname]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sexname</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>58</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movementdate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[movementdate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movementdate</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4550</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movementtype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[movementtype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movementtype</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>istrial</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[istrial]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>istrial</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returndate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[returndate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>returndate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3612</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnedreason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[returnedreason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>returnedreason</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deceaseddate</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[deceaseddate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deceaseddate</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2304</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deceasedreason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deceasedreason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deceasedreason</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>diedoffshelter</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[diedoffshelter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>diedoffshelter</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>puttosleep</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[puttosleep]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>puttosleep</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>isdoa</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[isdoa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>isdoa</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Animal_Shelter_Animals.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Animal_Shelter_Animals.csv' id='Animal_Shelter_Animals.csv_870410DC32204FBFBB5E9DB26ECB0C4C'>
+            <properties context=''>
+              <relation connection='textscan.1lp9c280z5ghe31c9wr9r0ug2kgh' name='Animal_Shelter_Animals.csv' table='[Animal_Shelter_Animals#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='datetime' name='intakedate' ordinal='1' />
+                  <column datatype='string' name='intakereason' ordinal='2' />
+                  <column datatype='boolean' name='istransfer' ordinal='3' />
+                  <column datatype='string' name='sheltercode' ordinal='4' />
+                  <column datatype='real' name='identichipnumber' ordinal='5' />
+                  <column datatype='string' name='animalname' ordinal='6' />
+                  <column datatype='string' name='breedname' ordinal='7' />
+                  <column datatype='string' name='basecolour' ordinal='8' />
+                  <column datatype='string' name='speciesname' ordinal='9' />
+                  <column datatype='string' name='animalage' ordinal='10' />
+                  <column datatype='string' name='sexname' ordinal='11' />
+                  <column datatype='string' name='location' ordinal='12' />
+                  <column datatype='datetime' name='movementdate' ordinal='13' />
+                  <column datatype='string' name='movementtype' ordinal='14' />
+                  <column datatype='boolean' name='istrial' ordinal='15' />
+                  <column datatype='datetime' name='returndate' ordinal='16' />
+                  <column datatype='string' name='returnedreason' ordinal='17' />
+                  <column datatype='datetime' name='deceaseddate' ordinal='18' />
+                  <column datatype='string' name='deceasedreason' ordinal='19' />
+                  <column datatype='boolean' name='diedoffshelter' ordinal='20' />
+                  <column datatype='boolean' name='puttosleep' ordinal='21' />
+                  <column datatype='boolean' name='isdoa' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Animal_Shelter_Animals' name='federated.1smv9y51hsggeg0zt2dnq0uqpk7j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1smv9y51hsggeg0zt2dnq0uqpk7j'>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='Intakedate' datatype='datetime' name='[intakedate]' role='dimension' type='ordinal' />
+            <column-instance column='[intakedate]' derivation='Month' name='[mn:intakedate:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[speciesname]' derivation='None' name='[none:speciesname:nk]' pivot='key' type='nominal' />
+            <column caption='Speciesname' datatype='string' name='[speciesname]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1smv9y51hsggeg0zt2dnq0uqpk7j].[none:speciesname:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1smv9y51hsggeg0zt2dnq0uqpk7j].[cnt:id:qk]</rows>
+        <cols>[federated.1smv9y51hsggeg0zt2dnq0uqpk7j].[mn:intakedate:ok]</cols>
+      </table>
+      <simple-id uuid='{A4E01AE1-B54C-4942-A79C-599C33AB1798}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1smv9y51hsggeg0zt2dnq0uqpk7j].[none:speciesname:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1smv9y51hsggeg0zt2dnq0uqpk7j].[none:id:ok]</field>
+            <field>[federated.1smv9y51hsggeg0zt2dnq0uqpk7j].[none:speciesname:nk]</field>
+            <field>[federated.1smv9y51hsggeg0zt2dnq0uqpk7j].[yr:intakedate:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D0456FAE-EAE7-46A8-B84A-182849FA57C9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      09fXx40bNyz/9vLyMoODg3zyySfE4/Et6wYCATo7O+no6KCtrQ1INrrZ2Vl6e3u5evXqlnXP
+      nDnDlStXOHXq1CsphoaGBu7du8fS0hLBYJCZmRmklDx48IDOzk5aW1v51re+taFeTk4O3d3d
+      dHV18cUXXwCgKArRaJShoSH++Mc/brmQfODAASKRCB6P55V9lNXV1XR0dFBTU5OW7nK5ePbs
+      GR0dHdy6dWvTumfPnuUPf/gDXV1d/P3vf98zv3o0GiUWi9Hc3Mz58+e5ePEiCwsLxONxVldX
+      6e3tpbW1lYmJCcu3/nVCCEFFRQX379+nsrIybabkdDqZmJigs7OTGzduWOlvvfUWn376KWfO
+      nNkzQ5ZIJKw2Ojk5ac2+Hz58yL179/jzn//8wvqnTp2ip6fH6s976QJ69uwZ/f39fPbZZxw9
+      ehQhBH6/n1u3bnHz5s1Nd/7k5eXh8XhYWVlJG3B9lSQSCSKRCBcuXOD8+fO8++67OBwOwuHw
+      /vweQDAYZHp6murqakpLSwEYHR1lZmaGw4cPo6oqZWVlTE9PWwuU09PTFBcXo+u69SLLysrI
+      ysrC7/czNDRELBajoqICIQSBQIBwOExRUZH1uZqm8Ytf/IKf/exneL3ebclq+p1zcnKsNCkl
+      ExMTTE1NUVBQQEVFBQsLC0xPT7O6ukpVVRU5OTmoqkooFLJG2Zqm8fDhQ6LRKIcOHcLtdpOf
+      n8/Y2BgTExMcPnwYTdOsey8uLk5TFJcvX+b06dNpfvuXIRQK4fP58Hq9PH/+nKKiIjweD1NT
+      UxQVFaFpGv39/Xg8HoqLi/H7/QghSCQSaZ1jZmaGsbExiouLKSsrs+5RSsnU1NSujPpisRiL
+      i4tp73N6epq8vDx+97vfcfz4cfx+PzU1NXg8Hubn58nKysLj8QDJ9yilJBAIMD09TWFh4Z79
+      dtLCwgIejwefz8f4+DgFBQV4vV4mJiY4cOAA8XicgYEBXC4XpaWleL1esrOzWVlZ4Te/+Q0/
+      //nP98wAaJrG/fv3icfj1NXVEQgEgGSfnZ+f5/DhwwghKCkpYXJyktLSUoQQ1jNVFIWxsTFm
+      ZmYoKSmhvLx8z2Sfm5tjcHCQ4uJiampqUBSFlZUV+vv7ycrKIj8/n8LCQqSUabOwv/3tb2Rn
+      Z9PQ0LArcmmaxszMTFq/mJ2dJTs7m/8Hh8p+k/arehcAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
